@@ -8,9 +8,9 @@
     @vite('resources/js/app.js')
 </head>
 
-<body class="container">
-    <h1>Template Laravel con BootStrap e Scss</h1>
-    
+<body class="container text-center">
+    <div class="fs-3 mt-3">Fumetti DC</div>
+    <button class="btn btn-primary"><a href="{{ route('comics.index') }}" class="text-decoration-none text-light">Lista Fumetti</a></button>
 </body>
 
 </html>
