@@ -15,13 +15,13 @@
                     <li class="card p-3">
                         <div><img class="img-fluid" src="{{ $comic->thumb }}" alt="{{ $comic->title }}"></div>
                         <div class="py-3"><h3>{{ $comic->title }}</h3></div>
-                        <div>{{ $comic->price }}</div>
+                        {{-- <div>{{ $comic->price }}</div>
                         <div>{{ $comic->series }}</div>
                         <div>{{ $comic->sale_date }}</div>
                         <hr>
                         <div>{{ $comic->artists }}</div>
                         <hr>
-                        <div>{{ $comic->writers }}</div>
+                        <div>{{ $comic->writers }}</div> --}}
                         <a class="btn btn-success mt-3" href="{{ route('comics.show', $comic->id) }}">Detail</a>
                     </li>
                 @endforeach
