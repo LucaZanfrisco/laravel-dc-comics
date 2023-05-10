@@ -8,7 +8,7 @@
     <div class="container p-3">
         <div><a class="btn btn-danger mb-5" href="{{ route('comics.index') }}">&triangleleft; Back</a></div>
         <div><img class="img-fluid mb-3" src="{{ $comic->thumb }}" alt="{{ $comic->title}}"></div>
-        <div>{{ $comic->title}}</div>
+        <div class="py-3"><h3>{{ $comic->title}}</h3></div>
         <hr>
         <div>{{ $comic->series}}</div>
         <hr>

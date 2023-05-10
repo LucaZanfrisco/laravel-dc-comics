@@ -26,11 +26,19 @@ class ComicsTableUser extends Seeder
             $newComic->series = $comic['series'];
             $newComic->sale_date = $comic['sale_date'];
             $newComic->type = $comic['type'];
-            foreach($comic['artists'] as $artist){
-                $newComic->artists .= $artist . ",";
+            foreach($comic['artists'] as $key => $artist){
+                if($key === count($comic['artists']) - 1){
+                    $newComic->artists .= $artist;
+                }else{
+                   $newComic->artists .= $artist . ","; 
+                }
             }
-            foreach($comic['writers'] as $writers){
-                $newComic->writers .= $writers .",";
+            foreach($comic['writers'] as $key => $writers){
+                if($key === count($comic['writers']) - 1){
+                    $newComic->writers .= $writers;
+                }else{
+                   $newComic->writers .= $writers .","; 
+                } 
             }
             $newComic->save();
         }
