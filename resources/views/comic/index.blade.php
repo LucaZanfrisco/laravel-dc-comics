@@ -2,7 +2,7 @@
 
 @section('header.title')
 <div class="container">
-    <div><a class="btn btn-dark" href="{{ route('comics.create')}}">Aggiungi Fumetto</a></div>
+    <div class="mb-3"><a class="btn btn-dark" href="{{ route('comics.create')}}">Add Comic &plus;</a></div>
 </div>
     <h1>Lista Comics</h1>
 @endsection
@@ -22,7 +22,7 @@
                         <div>{{ $comic->artists }}</div>
                         <hr>
                         <div>{{ $comic->writers }}</div>
-                        <a class="btn btn-success mt-3 text-decoration-none text-light" href="{{ route('comics.show', $comic->id) }}">Dettaglio</a>
+                        <a class="btn btn-success mt-3" href="{{ route('comics.show', $comic->id) }}">Detail</a>
                     </li>
                 @endforeach
             </ul>

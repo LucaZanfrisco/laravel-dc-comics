@@ -6,7 +6,7 @@
 
 @section('page.main')
     <div class="container p-3">
-        <div><a class="btn btn-danger mb-5 text-light text-decoration-none" href="{{ route('comics.index') }}">Indietro</a></div>
+        <div><a class="btn btn-danger mb-5" href="{{ route('comics.index') }}">&triangleleft; Back</a></div>
         <div><img class="img-fluid mb-3" src="{{ $comic->thumb }}" alt="{{ $comic->title}}"></div>
         <div>{{ $comic->title}}</div>
         <hr>
