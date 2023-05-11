@@ -13,10 +13,11 @@
         <h5>Series</h5>
         <div>{{ $comic->series}}</div>
         <hr>
-        <div>
+        <h5>Type</h5>
+        <div>{{ $comic->type }}</div>
+        <hr>
         <h5>Description</h5>
         <p>{{ $comic->description}}</p>
-        </div>
         <hr>
         <h5>Sale Date</h5>
         <div>{{ $comic->sale_date}}</div>

@@ -23,6 +23,7 @@
                         <hr>
                         <div>{{ $comic->writers }}</div> --}}
                         <a class="btn btn-success mt-3" href="{{ route('comics.show', $comic->id) }}">Detail</a>
+                        <a href="{{ route('comics.edit', $comic->id)}}" class="btn btn-info my-3">Edit</a>
                     </li>
                 @endforeach
             </ul>
