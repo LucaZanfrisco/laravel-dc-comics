@@ -40,4 +40,13 @@ class ComicRequest extends FormRequest
             'writers' => 'required'
         ];
     }
+    public function messages()
+    {
+        return [
+            'required' => ':attribute is required',
+            'max' => ':attribute exceeds in length',
+            'date' => ':attribute format not valid',
+            'url' => 'URL :attribute not valid'
+        ];
+    }
 }
